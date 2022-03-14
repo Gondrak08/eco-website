@@ -1,16 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Roboto, Helvetica Neue, sans-serif;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  width: fit-content !important;
+  margin: 0;
+}
+li{
+  width: fit-content;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.container{
+  max-width: 1100px;
+  width: 100%;
+}
+
+.blue-glassmorphism {
+  background: rgba( 27, 126, 60, 0.45 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4.5px );
+  -webkit-backdrop-filter: blur( 4.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.logo{
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.swiper .img{
+ overflow: hidden;
+ position: relative;
+ background-position: center center;
+ /* background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,0.09567577030812324) 0%, rgba(27,126,60,1) 100%, rgba(0,212,255,1) 100%); */
+  z-index: 0;
+  background: rgb(0,0,0) !important;
+  background: linear-gradient(169deg, rgba(0,0,0,0.09567577030812324) 0%, rgba(27,126,33,1) 100%, rgba(0,212,255,1) 100%) !important;
+}
+
+.img.img2{
+   box-shadow:0px 20px 35px -30px rgb(0 0 0 / 86%);
+}
+
+.services .icon{
+  width: 80px;
+  /* padding: 2em; */
+  height: 80px;
+  position: relative;
+  /* overflow: hidden; */
+  background:#73b925;
+  margin-bottom: 20px;
+  border-radius: 0 50% 50% 50%;
+
+}
+.services .icon .icon-image {
+  position: absolute;
+  z-index: 1;
+  height: 130px;
+  width: 30px;
+  top:30%;
+  left:30%;
+}
+
+.services .icon .icon-image .svg{
+  fill: white;
+}
+
+.services-container .card:hover, .aboutUs-container .card:hover{
+  background: #73b925;
+}
+.services-container .card:hover .services .icon, .services-container .card:hover .services .icon .svg{
+  fill: #73b925;
+  background: white;
+  color: black;
+}
+.services-container .card:hover .services p, .aboutUs-container .card:hover .aboutUs p{
+  color: white;
+}
+ 
+.image-container{
+  width: 100%;
+  
+  height: 100%;
+  position: absolute;
+  /* top: 0;
+  bottom: 0; */
+
+}
+.image-container .image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative !important;
 }
