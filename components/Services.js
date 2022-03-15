@@ -36,8 +36,6 @@ const Data = [
 
 
 const Services = () => {
-    
-
     return (
         <section className="services-container flex align-center h-auto py-8 bg-[#f9faf7] ">
             <div className="w-[auto] max-w-[1100px] flex flex-col gap-[15px] m-auto  ">
