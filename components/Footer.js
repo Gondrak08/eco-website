@@ -1,3 +1,5 @@
+import { ShareLinks } from './index'
+
 import Image from 'next/image';
 const BgImage = require('/public/footer.jpg')
 const Footer = () => {
@@ -10,7 +12,6 @@ const Footer = () => {
     }
     return (
         <footer className="footer relative flex items-center justify-center h-full md:h-[45vh]">
-            
             <section className="f-one flex justify-center items-center relative h-full w-full ">
                 <div className="container h-[90%] grid grid-cols-1 md:grid-cols-3 relative z-50 space-x-5 py-5 px-3">
                     <div className="flex flex-col space-y-3 px-4 md:px-0">
@@ -19,8 +20,7 @@ const Footer = () => {
                         </a>
                         <p className="text-[#f8f9fa] text-[16px]" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at, enim fugit placeat error, fuga adipisci, culpa mollitia sint ea iste sed soluta! Magnam corporis laborum atque aperiam nihil suscipit?
                         </p>
-                        <div className="social-links">
-                        </div>
+                        <ShareLinks fontSize="16" />
                     </div>
                     <div className="links flex flex-col md:justify-self-center  space-y-5 mb-2">
                         <h3 className="text-white text-left  font-bold  text-[20px] pt-2" >Serviços</h3>

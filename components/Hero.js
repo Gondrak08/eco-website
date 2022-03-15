@@ -7,37 +7,33 @@ const Solar = require('/public/solar.jpg');
 const Chapada = require('/public/chapada.jpg');
 const Poco = require('/public/poco.jpg');
 
+const Images = [
+    {
+        image: Eolica,
+        title: 'Energia Eolica',
+        description: 'Seja amigo do meio ambiente e produza energia sustentável.'
+    },
+    {
+        image: Chapada,
+        title: 'Preservação ambiental',
+        description: 'Nós ajude a salvar o mundo, restaurando áreas desmatadas e preservando locais de natureza virgem'
+    },
+    {
+        image: Solar,
+        title: 'Energia Solar é autonomia',
+        description: 'Seja amigo do meio ambiente e produza energia sustentável.'
+    },
+    {
+        image: Poco,
+        title: 'Poço Artesiano',
+        description: 'Fure um poço em seu terreno. Faça uma avaliação conosco.'
+    }
+]
 
 const Hero = () => {
-
-    const Images = [
-            {
-            image: Eolica,
-            title: 'Energia Eolica',
-            description: 'Seja amigo do meio ambiente e produza energia sustentável.'
-            },
-            {
-                image: Chapada,
-                title: 'Preservação ambiental',
-                description: 'Nós ajude a salvar o mundo, restaurando áreas desmatadas e preservando locais de natureza virgem'
-            },
-            {
-                image: Solar,
-                title: 'Energia Solar é autonomia',
-                description: 'Seja amigo do meio ambiente e produza energia sustentável.'
-            },
-            {
-                image: Poco,
-                title: 'Poço Artesiano',
-                description: 'Fure um poço em seu terreno. Faça uma avaliação conosco.'
-            }
-        ]
-
-
     return (
         <>
             <div>
-
                 <Swiper
                     className="h-[35vh] md:h-[75vh] "
                     effect="fade"
@@ -57,7 +53,7 @@ const Hero = () => {
                         Images.map((item, index) => (
                             <SwiperSlide className="relative" key={item + index}>
                                 <div className="w-full h-full relative">
-                                    <div className="w-full h-full bg-green-300 left-0 top-0 absolute opacity-25 z-30" />
+                                    <div className="w-full h-full bg-black left-0 top-0 absolute opacity-[.4] z-30" />
                                     
                                     <Image className="img img2" src={item.image} layout="fill" alt="" />
 

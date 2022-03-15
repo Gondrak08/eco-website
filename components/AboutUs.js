@@ -1,3 +1,4 @@
+import { ShareLinks } from './index';
 import Image from 'next/image'
 const Avatar = require('/public/avatar.png')
 const Data = [
@@ -35,9 +36,8 @@ const Data = [
 
 
 const AboutUs = () => {
-    
     return (
-        <div className="aboutUs-container flex items-center justify-center  py-3 px-5 bg-[#f8f9fa] ">
+        <div className="aboutUs-container flex items-center justify-center  py-3 px-5 bg-[#f8f9fa] py-8">
             <div className="container flex flex-col gap-10 items-center">
                 <div className="texts flex flex-col justify-center items-center gap-[5px]">
                     <span className="logo text-[16px] text-[#73b925]" >conheça nosso.</span>
@@ -59,6 +59,7 @@ const AboutUs = () => {
                                     <div className="texts mt-4 flex flex-col ">
                                         <p className="font-bold text-center text-[18px]" >{item.name}</p>
                                         <p className="text-[16px] text-center text-[#1b7e3c] text-bold mb-1" >{item.title}</p>
+                                        <ShareLinks fontSize="15" classProps="justify-center my-2" />
                                         <p className="mb-0 text-[#8c8c8c]  ">{item.description}</p>
                                     </div>
                                 </div>
@@ -69,7 +70,6 @@ const AboutUs = () => {
                     
                     )
                     }
-                   
             </div>
             </div>
         </div>

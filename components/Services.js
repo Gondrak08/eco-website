@@ -39,7 +39,7 @@ const Services = () => {
     
 
     return (
-        <section className="services-container flex align-center h-auto py-3 bg-[#f9faf7] ">
+        <section className="services-container flex align-center h-auto py-8 bg-[#f9faf7] ">
             <div className="w-[auto] max-w-[1100px] flex flex-col gap-[15px] m-auto  ">
                 <div className="row justify-content-center my-5 text-center py-5">
                     <span className="logo text-[16px] text-[#73b925]">serviços</span>
