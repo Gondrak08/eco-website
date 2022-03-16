@@ -57,12 +57,13 @@ const Hero = () => {
                                     
                                     <Image className="img img2" src={item.image} layout="fill" alt="" />
 
-                                    <div className="container-xl  absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
+                                    <div className="container  absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
                                     flex flex-col justify-center items-center gap-[10px] z-30
+                                   
                                     ">
-                                        <h1 className="text-6xl text-white">{item.title}</h1>
-                                        <p className="text-white  text-[18px] self-start" > {item.description}</p>
-                                        <button className="bg-[#1b7e3c] text-white self-start py-2 px-4  rounded " >Saiba Mais</button>
+                                        <h1 className="text-xl h-auto md:text-6xl text-white">{item.title}</h1>
+                                        <p className="text-white  text-sm px-3 md:px-0 md:text-[18px] self-center" > {item.description}</p>
+                                        <button className="bg-[#1b7e3c] text-white self-center py-2 px-4  rounded " >Saiba Mais</button>
                                     </div>
                                 </div>
                         </SwiperSlide>

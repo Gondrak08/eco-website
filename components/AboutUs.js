@@ -40,8 +40,8 @@ const AboutUs = () => {
         <div className="aboutUs-container flex items-center justify-center  py-3 px-5 bg-[#f8f9fa] py-8">
             <div className="container flex flex-col gap-10 items-center">
                 <div className="texts flex flex-col justify-center items-center gap-[5px]">
-                    <span className="logo text-[16px] text-[#73b925]" >conheça nosso.</span>
-                    <h2 className="text-[26px] lg:text-[36px]">Time Técnico</h2>
+                    <span className="logo text-[16px] md:text-[20px] text-[#73b925]" >time técnico.</span>
+                    <h2 className="text-[20px] text-center lg:text-[36px]">conheça a nossa equipe</h2>
                 </div>
                 <div className="grid-cols-1 items-center  md:grid md:grid-cols-3 lg:grid-cols-5 flew-wrap justify-content-center gap-[15px] content-center g-lg-2 mb-5" >
                     {

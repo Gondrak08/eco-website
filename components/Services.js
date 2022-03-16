@@ -38,10 +38,10 @@ const Data = [
 const Services = () => {
     return (
         <section className="services-container flex align-center h-auto py-8 bg-[#f9faf7] ">
-            <div className="w-[auto] max-w-[1100px] flex flex-col gap-[15px] m-auto  ">
+            <div className="w-[auto] container flex flex-col gap-[15px] m-auto  ">
                 <div className="row justify-content-center my-5 text-center py-5">
-                    <span className="logo text-[16px] text-[#73b925]">serviços</span>
-                    <h2 className="text-[26px] lg:text-[36px]"  >
+                    <span className="logo text-[16px] md:text-[20px] text-[#73b925]">serviços</span>
+                    <h2 className="text-[20px] lg:text-[36px]"  >
                         Prestamos variados serviços, <br /> com diversos <span className="text-[#73b925]">clientes</span> satisfeitos
                     </h2>
                 </div>
