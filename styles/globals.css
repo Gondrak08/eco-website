@@ -110,6 +110,30 @@ li{
   position: relative !important;
 }
 
-.inputs input::placeholder{
+.inputs input, .inputs textarea{
   padding-left: 1em;
+  padding-top: .3em;
+}
+
+.clients-container .clientLogo{
+  width: 100%;
+  max-width:  150px;
+  height: 100%;
+  max-height: 100px;
+
+}
+.clients-container .clientLogo:hover{border:1px solid red}
+
+.clients-container .clientLogo .img{
+  width: fit-content;
+  height: fit-content;
+  object-fit: cover;
+
+}
+
+.contact-container input, .contact-container textarea{
+  border: 1px solid black;
+  border-radius: .3em;
+   padding-left: 1em;
+  padding-top: .3em;
 }

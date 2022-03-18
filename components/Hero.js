@@ -35,7 +35,7 @@ const Hero = () => {
         <>
             <div>
                 <Swiper
-                    className="h-[35vh] md:h-[75vh] "
+                    className="h-[35vh] md:h-[60vh] "
                     effect="fade"
                     autoplay={{
                         delay: 2500,
@@ -61,9 +61,10 @@ const Hero = () => {
                                     flex flex-col justify-center items-center gap-[10px] z-30
                                    
                                     ">
+                                        <span className="px-2 py-1 bg-[#1b7e3c] rounded-l-xl rounded-bl-none rounded-b-xl mb-1" ><p className="logo text-white text-md">MandalaGeo</p></span>
                                         <h1 className="text-xl h-auto md:text-6xl text-white">{item.title}</h1>
                                         <p className="text-white  text-sm px-3 md:px-0 md:text-[18px] self-center" > {item.description}</p>
-                                        <button className="bg-[#1b7e3c] text-white self-center py-2 px-4  rounded " >Saiba Mais</button>
+                                        <button className="bg-[#1b7e3c] text-white self-center py-2 px-4  rounded mt-2" >Saiba Mais</button>
                                     </div>
                                 </div>
                         </SwiperSlide>

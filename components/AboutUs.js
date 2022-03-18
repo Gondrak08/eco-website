@@ -1,78 +1,34 @@
-import { ShareLinks } from './index';
-import Image from 'next/image'
-const Avatar = require('/public/avatar.png')
-const Data = [
-    {
-        name: 'Wolflan Pimentel',
-        title: 'Geólogo',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quas optio, dolorem repudiandae nemo.',
-        image: Avatar
-    },
-    {
-        name: 'Suzana Ferreira',
-        title: 'Eng. Ambiental',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quas optio, dolorem repudiandae nemo.',
-        image: Avatar
-    },
-    {
-        name: 'Pedro Barbosa',
-        title: 'Advogado',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quas optio, dolorem repudiandae nemo.',
-        image: Avatar
-    },
-    {
-        name: 'Ana Pimenta',
-        title: 'Administradora',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quas optio, dolorem repudiandae nemo.',
-        image: Avatar
-    },
-    {
-        name: 'Felipe Souza',
-        title: 'Eng. de Software',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quas optio, dolorem repudiandae nemo.',
-        image: Avatar
-    }
-]
+const AboutUsImg = require('/public/trees.jpeg')
 
+import Image from 'next/image';
 
 const AboutUs = () => {
     return (
-        <div className="aboutUs-container flex items-center justify-center  py-3 px-5 bg-[#f8f9fa] py-8">
-            <div className="container flex flex-col gap-10 items-center">
-                <div className="texts flex flex-col justify-center items-center gap-[5px]">
-                    <span className="logo text-[16px] md:text-[20px] text-[#73b925]" >time técnico.</span>
-                    <h2 className="text-[20px] text-center lg:text-[36px]">conheça a nossa equipe</h2>
+        <section className="showCase-container flex items-center justify-center   ">
+            <div className="container grid grid-cols-1 md:grid-cols-2 justify-center md:space-x-3 space-y-4 md:space-y-0">
+                <div className="one  relative w-auto ">
+                    <Image
+                        src={AboutUsImg}
+                        height={800}
+                        layout="responsive"
+                        alt="avatar picture" />
                 </div>
-                <div className="grid-cols-1 items-center  md:grid md:grid-cols-3 lg:grid-cols-5 flew-wrap justify-content-center gap-[15px] content-center g-lg-2 mb-5" >
-                    {
-                        Data.map((item, index) => (
-                            <div key={item + index} className="card overflow-hidden relative  d-flex  bg-white py-4 px-5" >
-                                <div className="aboutUs">
-                                    <div className="icon relative" >
-                                        <div className="avatar-image">
-                                            <Image
-                                                src={item.image}
-                                                layout="responsive"
-                                                alt="avatar picture" />
-                                        </div>
-                                    </div>
-                                    <div className="texts mt-4 flex flex-col ">
-                                        <p className="font-bold text-center text-[18px]" >{item.name}</p>
-                                        <p className="text-[16px] text-center text-[#1b7e3c] text-bold mb-1" >{item.title}</p>
-                                        <ShareLinks fontSize="15" classProps="justify-center my-2" />
-                                        <p className="mb-0 text-[#8c8c8c]  ">{item.description}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                        )
-                    
-                    
-                    )
-                    }
+                <div className="two flex items-center">
+                    <div className="texts flex flex-col px-3 py-2 md:py-0 items-center space-y-3 md:h-[80%] ">
+                        <h2 className="self-center md:self-start text-[20px] md:text-[35px]">Quem Somos!</h2>
+                        <p className="text-[#6c757d] " >Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eaque nihil illo est nobis possimus, maiores neque, unde sit vitae inventore cum id, expedita voluptatem earum voluptas suscipit! Ducimus, nostrum.
+                        Quibusdam saepe error eligendi ut maiores reprehenderit provident porro dolor, dolorem, culpa quam consectetur! Illo expedita ea suscipit deleniti soluta facilis, et sed. Atque qui provident dolorum voluptatibus. Ipsam, libero!
+                        Adipisci minus fuga natus, corporis id voluptatem iusto recusandae ratione inventore. Eveniet optio quae eos ipsam, voluptas non magni consectetur enim impedit neque eligendi esse in exercitationem? Rem, necessitatibus quae.
+                        <br />
+                        <br />
+                        Recusandae, ad autem officiis doloremque quos in, velit, molestiae maxime ut vero sed saepe? Minus commodi sed aspernatur deserunt quidem ea sapiente reiciendis nobis! Exercitationem libero quia provident repellendus vero.
+                        Id libero suscipit dolores iure, voluptatibus illo explicabo vitae, possimus similique dolorum quas cum non inventore. Quam nostrum reprehenderit aperiam nulla veniam quod ab, ipsa rem provident pariatur repellat dignissimos.
+                        Error odit iste debitis tenetur sunt quos quisquam maiores cupiditate laboriosam dignissimos eligendi expedita omnis, est dolor eum saepe amet adipisci, rem quaerat velit accusantium! Maiores dicta commodi voluptates quae.</p>
+
+                    </div>
+                </div>
             </div>
-            </div>
-        </div>
+        </section>
     )
 }
 

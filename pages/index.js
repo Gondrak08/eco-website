@@ -1,4 +1,4 @@
-import{ Navbar,Hero,AboutUs,Services,ShowCase, NewsLetter, Contact, Footer} from '../components'
+import { Navbar, Hero, AboutUs, Clients, Workers,Services,ShowCase, NewsLetter,MapGoogle, Contact, Footer} from '../components'
 
 export default function Home() {
   return (
@@ -9,9 +9,13 @@ export default function Home() {
       </header>
       <section>
         <Services />
+        <AboutUs/>
+        <Workers />
+        <Clients/>
         <ShowCase />
-        <AboutUs />
+        <MapGoogle />
         <NewsLetter />
+        <Contact />
       </section>
       <Footer />
     </div>
