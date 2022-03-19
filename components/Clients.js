@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import ClientLogo from '/public/clientLogo.png'
+
+
 const Clients = () => {
-    
     return (
         <div className="clients-container w-full  py-8 h-full flex flex-col bg-[#1b7e3c] justify-center items-center " >
             <h2 className="logo self-center text-[20px] md:text-[36px] text-white " > Conheça alguns dos nossos clientes</h2>
@@ -12,6 +13,8 @@ const Clients = () => {
                             src={ClientLogo}
                             alt="avatar picture"
                             className="img"
+                            loading="eager"
+                            priority={true}
                         />
                     </a>    
                 ))}

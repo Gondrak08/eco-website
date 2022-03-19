@@ -53,7 +53,10 @@ const Workers = () => {
                                             <Image
                                                 src={item.image}
                                                 layout="responsive"
-                                                alt="avatar picture" />
+                                                alt="avatar picture"
+                                                loading="eager"
+                                                priority={true}
+                                            />
                                         </div>
                                     </div>
                                     <div className="texts mt-4 flex flex-col ">

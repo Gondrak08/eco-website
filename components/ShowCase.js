@@ -29,7 +29,10 @@ const ShowCase = () => {
                         src={SCImage}
                         height={800}
                         layout="responsive"
-                        alt="avatar picture" />
+                        alt="avatar picture"
+                        loading="eager"
+                        priority={true}
+                    />
                 </div>
             </div>
         </section>

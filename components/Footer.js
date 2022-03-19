@@ -41,7 +41,7 @@ const Footer = () => {
                 </div>
                 <div className="w-full h-full bg-black left-0 top-0 absolute opacity-[0.7] z-30" />
                 <div className="image-container">
-                    <Image src={BgImage} className="image" layout="fill" alt="" />
+                    <Image src={BgImage} className="image" layout="fill" alt="" loading="eager" priority={true} />
                 </div>
             </section>
             <section></section>

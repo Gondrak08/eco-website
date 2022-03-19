@@ -55,7 +55,7 @@ const Hero = () => {
                                 <div className="w-full h-full relative">
                                     <div className="w-full h-full bg-black left-0 top-0 absolute opacity-[.4] z-30" />
                                     
-                                    <Image className="img img2" src={item.image} layout="fill" alt="" />
+                                    <Image className="img img2" src={item.image} layout="fill" priority={true} alt="" />
 
                                     <div className="container  absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
                                     flex flex-col justify-center items-center gap-[10px] z-30

@@ -11,7 +11,11 @@ const AboutUs = () => {
                         src={AboutUsImg}
                         height={800}
                         layout="responsive"
-                        alt="avatar picture" />
+                        alt="avatar picture"
+                        loading="eager"
+                        priority={true}
+                        
+                    />
                 </div>
                 <div className="two flex items-center">
                     <div className="texts flex flex-col px-3 py-2 md:py-0 items-center space-y-3 md:h-[80%] ">

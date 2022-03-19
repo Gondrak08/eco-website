@@ -17,7 +17,7 @@ const NewsLetter = () => {
             </div>
             <div className="w-full h-full bg-[#1b7e3c] left-0 top-0 absolute opacity-[0.8] z-30" />
             <div className="image-container">
-                <Image src={BgImage} className="image" layout="fill" alt="" />
+                <Image src={BgImage} className="image" layout="fill" alt="" loading="eager" priority={true} />
             </div>
         </div>
     )    
