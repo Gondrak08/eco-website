@@ -148,7 +148,6 @@ li{
 .aboutUs-container .image img{
   height: unset !important;
   width: 100% !important;
-  
-  position: relative;
-  /* object-fit:contain; */
+  position: relative !important;
+  object-fit:cover;
 }
