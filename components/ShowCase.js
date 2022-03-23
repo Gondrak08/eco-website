@@ -1,16 +1,12 @@
 const SCImage = require('/public/showcase.jpeg')
-
 import Image from 'next/image';
-
-
-
 
 const ShowCase = () => {
     return (
         <section className="showCase-container flex items-center justify-center   ">
             <div className="container grid grid-cols-1 md:grid-cols-2 justify-center md:space-x-3 space-y-4 md:space-y-0">
                 <div className="two flex items-center">
-                    <div className="texts flex flex-col px-3 py-2 md:py-0 items-center space-y-3 md:h-[80%] ">
+                    <div className="texts flex flex-col my-5  px-3 py-2 md:py-0 items-center space-y-3 ">
                         <h2 className="text-[20px] md:text-[35px]">Ajude-nos a salvar o nosso planeta!</h2>
 
                         <p className="text-[#6c757d]"  >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam iusto dicta dolor quos, possimus modi vero debitis. Nulla dolore dolores molestiae quae architecto eveniet velit blanditiis, voluptas cupiditate sed a!</p>

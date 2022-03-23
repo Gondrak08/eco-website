@@ -4,23 +4,26 @@ import Image from 'next/image';
 
 const AboutUs = () => {
     return (
-        <section className="showCase-container flex items-center justify-center   ">
-            <div className="container grid grid-cols-1 md:grid-cols-2 justify-center md:space-x-3 space-y-4 md:space-y-0">
+        <section className="aboutUs-container flex items-center justify-center  h-auto ">
+            <div className="container grid  grid-cols-1 md:grid-cols-2 justify-center md:space-x-3 space-y-4 md:space-y-0 h-auto ">
                 <div className="one  relative w-auto ">
-                    <Image
-                        src={AboutUsImg}
-                        height={800}
-                        layout="responsive"
-                        alt="avatar picture"
-                        loading="eager"
-                        priority={true}
-                        
-                    />
+                    <span className="image  ">
+                        <Image
+                            src={AboutUsImg}
+                            // height={800}
+                            layout="fill"
+                            alt="avatar picture"
+                            // objectFit="cover"
+                            loading="eager"
+                            priority={true}
+                            // className="image"
+                        />
+                    </span>
                 </div>
                 <div className="two flex items-center">
-                    <div className="texts flex flex-col px-3 py-2 md:py-0 items-center space-y-3 md:h-[80%] ">
+                    <div className="texts my-5 flex flex-col px-3 py-2 md:py-0 items-center space-y-3  ">
                         <h2 className="self-center md:self-start text-[20px] md:text-[35px]">Quem Somos!</h2>
-                        <p className="text-[#6c757d] " >Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eaque nihil illo est nobis possimus, maiores neque, unde sit vitae inventore cum id, expedita voluptatem earum voluptas suscipit! Ducimus, nostrum.
+                        <p className="text-[#6c757d] pb-1 " >Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eaque nihil illo est nobis possimus, maiores neque, unde sit vitae inventore cum id, expedita voluptatem earum voluptas suscipit! Ducimus, nostrum.
                         Quibusdam saepe error eligendi ut maiores reprehenderit provident porro dolor, dolorem, culpa quam consectetur! Illo expedita ea suscipit deleniti soluta facilis, et sed. Atque qui provident dolorum voluptatibus. Ipsam, libero!
                         Adipisci minus fuga natus, corporis id voluptatem iusto recusandae ratione inventore. Eveniet optio quae eos ipsam, voluptas non magni consectetur enim impedit neque eligendi esse in exercitationem? Rem, necessitatibus quae.
                         <br />

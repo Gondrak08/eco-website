@@ -24,7 +24,10 @@ li{
 * {
   box-sizing: border-box;
 }
-
+.inputs input, .inputs textarea{
+  padding-left: 1em;
+  padding-top: .3em;
+}
 .container{
   max-width: 1100px;
   width: 100%;
@@ -82,7 +85,7 @@ li{
   fill: white;
 }
 
-.services-container .card:hover, .aboutUs-container .card:hover{
+.services-container .card:hover, .workers-container .card:hover{
   background: #73b925;
 }
 .services-container .card:hover .services .icon, .services-container .card:hover .services .icon .svg{
@@ -90,7 +93,7 @@ li{
   background: white;
   color: black;
 }
-.services-container .card:hover .services p, .aboutUs-container .card:hover .aboutUs p{
+.services-container .card:hover .services p, .workers-container .card:hover .workers p{
   color: white;
 }
  
@@ -106,14 +109,11 @@ li{
 .image-container .image{
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
   position: relative !important;
 }
 
-.inputs input, .inputs textarea{
-  padding-left: 1em;
-  padding-top: .3em;
-}
+
 
 .clients-container .clientLogo{
   width: 100%;
@@ -122,18 +122,33 @@ li{
   max-height: 100px;
 
 }
-.clients-container .clientLogo:hover{border:1px solid red}
 
 .clients-container .clientLogo .img{
-  width: fit-content;
-  height: fit-content;
-  object-fit: cover;
-
+  width: fit-content !important;
+  height: fit-content !important;
+  object-fit: contain !important ;
+  opacity: 1;
 }
+.clients-container .clientLogo:hover{opacity: .8;}
 
 .contact-container input, .contact-container textarea{
   border: 1px solid black;
   border-radius: .3em;
    padding-left: 1em;
   padding-top: .3em;
+}
+
+
+.aboutUs-container .image{
+  max-height: 800px !important;
+  height: 100% !important;
+  width: 100%;
+  position: unset;
+}
+.aboutUs-container .image img{
+  height: unset !important;
+  width: 100% !important;
+  
+  position: relative;
+  /* object-fit:contain; */
 }

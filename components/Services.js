@@ -39,9 +39,11 @@ const Services = () => {
     return (
         <section className="services-container flex align-center h-auto py-8 bg-[#f9faf7] ">
             <div className="w-[auto] container flex flex-col gap-[15px] m-auto  ">
-                <div className="row justify-content-center my-5 text-center py-5">
-                    <span className="logo text-[16px] md:text-[20px] text-[#73b925]">serviços</span>
-                    <h2 className="text-[20px] lg:text-[36px]"  >
+                <div className="texts flex my-5 flex-col justify-center items-center gap-[5px] ">
+                    <span className="px-2 py-1 bg-[#1b7e3c] rounded-l-xl rounded-bl-none rounded-b-xl mb-1">
+                        <span className="logo  text-[16px] md:text-[18px] text-white">serviços</span>
+                    </span>
+                    <h2 className="text-[20px] text-center lg:text-[36px]"  >
                         Prestamos variados serviços, <br /> com diversos <span className="text-[#73b925]">clientes</span> satisfeitos
                     </h2>
                 </div>

@@ -37,17 +37,19 @@ const Data = [
 
 const Workers = () => {
     return (
-        <div className="aboutUs-container flex items-center justify-center  px-5 bg-[#f8f9fa] py-8">
+        <div className="workers-container flex items-center justify-center  px-5 bg-[#f8f9fa] py-8">
             <div className="container  flex flex-col gap-10 items-center">
-                <div className="texts flex flex-col justify-center items-center gap-[5px]">
-                    <span className="logo text-[16px] md:text-[20px] text-[#73b925]" >Time técnico.</span>
+                <div className="texts flex my-5 flex-col justify-center items-center gap-[5px]">
+                    <span className="px-2 py-1 bg-[#1b7e3c] rounded-l-xl rounded-bl-none rounded-b-xl mb-1">
+                        <span className="logo  text-[16px] md:text-[18px] text-white">time técnico</span>
+                    </span>
                     <h2 className="text-[20px] text-center lg:text-[36px]">conheça a nossa equipe</h2>
                 </div>
                 <div className="grid-cols-1 items-center  md:grid md:grid-cols-3 lg:grid-cols-5 flew-wrap justify-content-center gap-[15px] content-center g-lg-2 mb-5" >
                     {
                         Data.map((item, index) => (
                             <div key={item + index} className="card overflow-hidden relative  d-flex  bg-white py-4 px-5" >
-                                <div className="aboutUs">
+                                <div className="workers">
                                     <div className="icon relative" >
                                         <div className="avatar-image">
                                             <Image
